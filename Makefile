@@ -44,6 +44,7 @@ CFLAGS = -mcpu=cortex-m3 -mthumb -Wall -g -c
 ASFLAGS = -mcpu=cortex-m3 -mthumb
 
 # Linker Flags 
+
 #LINKER_SCRIPT = STM32F100C8_full.ld
 LINKER_SCRIPT = STM32F100C8v2.ld
 LDFLAGS=-mthumb -mcpu=cortex-m3 $(NO_SEMIHOST) -T $(LINKER_SCRIPT) # Use std libraries

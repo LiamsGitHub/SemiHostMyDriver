@@ -72,7 +72,11 @@ Infinite_Loop:
 .section  .isr_vector
 
 Vectors:
+
 .word __stack
+
+//.word __stack_base__
+
 .word Reset_Handler
 .word NMI_Handler
 .word HardFault_Handler
