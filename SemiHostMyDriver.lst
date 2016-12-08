@@ -1,0 +1,472 @@
+
+SemiHostMyDriver.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000002d0  00000000  00000000  00010000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_info   000000df  00000000  00000000  000102d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_abbrev 000000a4  00000000  00000000  000103af  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000020  00000000  00000000  00010453  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_line   000000ea  00000000  00000000  00010473  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_str    0000012d  00000000  00000000  0001055d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .comment      0000006e  00000000  00000000  0001068a  2**0
+                  CONTENTS, READONLY
+  7 .ARM.attributes 00000031  00000000  00000000  000106f8  2**0
+                  CONTENTS, READONLY
+  8 .debug_frame  00000054  00000000  00000000  0001072c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 /Users/Liam/Documents/LiamsDox/Personal/GeekingOut/SoftDvt/Embedded/EclipseMarsFeb2016/WorkspaceJan16/Foundation/startup_SHMD.o
+0000025c l       .text	00000000 LoopCopyDataInit
+00000254 l       .text	00000000 CopyDataInit
+00000270 l       .text	00000000 LoopFillZerobss
+0000026a l       .text	00000000 FillZerobss
+00000290 l       .text	00000000 Infinite_Loop
+00000000 l    df *ABS*	00000000 semihost.c
+00000000 l    df *ABS*	00000000 /Users/Liam/Documents/LiamsDox/Personal/GeekingOut/SoftDvt/Embedded/EclipseMarsFeb2016/WorkspaceJan16/Foundation/semihostDriver.o
+00000290  w    F .text	00000000 EXTI2_IRQHandler
+00000290  w    F .text	00000000 DebugMon_Handler
+20000000 g       .text	00000000 __data_start__
+00000290  w    F .text	00000000 TIM1_CC_IRQHandler
+00000290  w    F .text	00000000 HardFault_Handler
+00000290  w    F .text	00000000 SysTick_Handler
+00000290  w    F .text	00000000 PVD_IRQHandler
+00000294 g     F .text	00000000 SemiHost
+00000290  w    F .text	00000000 PendSV_Handler
+00000290  w    F .text	00000000 NMI_Handler
+00000290  w    F .text	00000000 EXTI3_IRQHandler
+00000290  w    F .text	00000000 EXTI0_IRQHandler
+00000290  w    F .text	00000000 I2C2_EV_IRQHandler
+00000290  w    F .text	00000000 TIM1_UP_TIM16_IRQHandler
+00000290  w    F .text	00000000 UsageFault_Handler
+20000000 g       .text	00000000 __bss_start__
+00000290  w    F .text	00000000 SPI1_IRQHandler
+00000290  w    F .text	00000000 TAMPER_IRQHandler
+00000290  w    F .text	00000000 TIM6_DAC_IRQHandler
+00000290  w    F .text	00000000 DMA2_Channel2_IRQHandler
+00000290  w    F .text	00000000 DMA1_Channel4_IRQHandler
+00000290  w    F .text	00000000 ADC1_IRQHandler
+00000290  w    F .text	00000000 USART3_IRQHandler
+00000290  w    F .text	00000000 RTC_IRQHandler
+00000290  w    F .text	00000000 DMA1_Channel7_IRQHandler
+00000250 g       .text	00000000 Reset_Handler
+00000290  w    F .text	00000000 UART5_IRQHandler
+00000290  w    F .text	00000000 TIM4_IRQHandler
+00000134 g     F .text	000000ec myprintf
+00000290  w    F .text	00000000 DMA2_Channel1_IRQHandler
+20000000 g       .text	00000000 end
+00000290  w    F .text	00000000 I2C1_EV_IRQHandler
+20000000 g       .text	00000000 __data_end__
+00000290  w    F .text	00000000 DMA1_Channel6_IRQHandler
+00000290  w    F .text	00000000 UART4_IRQHandler
+00000290  w    F .text	00000000 DMA2_Channel4_IRQHandler
+20000000 g       .text	00000000 __bss_end__
+00000290  w    F .text	00000000 TIM3_IRQHandler
+00000290  w    F .text	00000000 RCC_IRQHandler
+00000290  w    F .text	00000000 DMA1_Channel1_IRQHandler
+00000290 g       .text	00000000 Default_Handler
+00000290  w    F .text	00000000 CEC_IRQHandler
+00000290  w    F .text	00000000 EXTI15_10_IRQHandler
+00000000 g       .text	00000000 Vectors
+00000290  w    F .text	00000000 TIM14_IRQHandler
+00000290  w    F .text	00000000 TIM13_IRQHandler
+00000290  w    F .text	00000000 TIM12_IRQHandler
+00000290  w    F .text	00000000 TIM7_IRQHandler
+00000290  w    F .text	00000000 TIM5_IRQHandler
+00000290  w    F .text	00000000 EXTI9_5_IRQHandler
+000002d0 g       *ABS*	00000000 _start_data_flash
+00000290  w    F .text	00000000 SPI2_IRQHandler
+00000290  w    F .text	00000000 MemManage_Handler
+00000220 g     F .text	00000030 main
+00000290  w    F .text	00000000 SVC_Handler
+00000290  w    F .text	00000000 DMA2_Channel5_IRQHandler
+20000000 g       .text	00000000 __end__
+00000290  w    F .text	00000000 DMA1_Channel5_IRQHandler
+00000290  w    F .text	00000000 EXTI4_IRQHandler
+00000290  w    F .text	00000000 TIM1_TRG_COM_TIM17_IRQHandler
+00000290  w    F .text	00000000 DMA1_Channel3_IRQHandler
+00000290  w    F .text	00000000 FSMC_IRQHandler
+00000290  w    F .text	00000000 WWDG_IRQHandler
+00000290  w    F .text	00000000 TIM2_IRQHandler
+20002000 g       .text	00000000 __stack
+00000290  w    F .text	00000000 EXTI1_IRQHandler
+00000290  w    F .text	00000000 RTCAlarm_IRQHandler
+00000290  w    F .text	00000000 USART2_IRQHandler
+00000290  w    F .text	00000000 I2C2_ER_IRQHandler
+00000290  w    F .text	00000000 DMA1_Channel2_IRQHandler
+00000290  w    F .text	00000000 FLASH_IRQHandler
+00000290  w    F .text	00000000 BusFault_Handler
+00000290  w    F .text	00000000 USART1_IRQHandler
+00000290  w    F .text	00000000 SPI3_IRQHandler
+00000290  w    F .text	00000000 I2C1_ER_IRQHandler
+00000290  w    F .text	00000000 DMA2_Channel3_IRQHandler
+00000290  w    F .text	00000000 TIM1_BRK_TIM15_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000000 <Vectors>:
+   0:	20002000 	.word	0x20002000
+   4:	00000250 	.word	0x00000250
+   8:	00000291 	.word	0x00000291
+   c:	00000291 	.word	0x00000291
+  10:	00000291 	.word	0x00000291
+  14:	00000291 	.word	0x00000291
+  18:	00000291 	.word	0x00000291
+	...
+  2c:	00000291 	.word	0x00000291
+  30:	00000291 	.word	0x00000291
+  34:	00000000 	.word	0x00000000
+  38:	00000291 	.word	0x00000291
+  3c:	00000291 	.word	0x00000291
+  40:	00000291 	.word	0x00000291
+  44:	00000291 	.word	0x00000291
+  48:	00000291 	.word	0x00000291
+  4c:	00000291 	.word	0x00000291
+  50:	00000291 	.word	0x00000291
+  54:	00000291 	.word	0x00000291
+  58:	00000291 	.word	0x00000291
+  5c:	00000291 	.word	0x00000291
+  60:	00000291 	.word	0x00000291
+  64:	00000291 	.word	0x00000291
+  68:	00000291 	.word	0x00000291
+  6c:	00000291 	.word	0x00000291
+  70:	00000291 	.word	0x00000291
+  74:	00000291 	.word	0x00000291
+  78:	00000291 	.word	0x00000291
+  7c:	00000291 	.word	0x00000291
+  80:	00000291 	.word	0x00000291
+  84:	00000291 	.word	0x00000291
+  88:	00000291 	.word	0x00000291
+	...
+  9c:	00000291 	.word	0x00000291
+  a0:	00000291 	.word	0x00000291
+  a4:	00000291 	.word	0x00000291
+  a8:	00000291 	.word	0x00000291
+  ac:	00000291 	.word	0x00000291
+  b0:	00000291 	.word	0x00000291
+  b4:	00000291 	.word	0x00000291
+  b8:	00000291 	.word	0x00000291
+  bc:	00000291 	.word	0x00000291
+  c0:	00000291 	.word	0x00000291
+  c4:	00000291 	.word	0x00000291
+  c8:	00000291 	.word	0x00000291
+  cc:	00000291 	.word	0x00000291
+  d0:	00000291 	.word	0x00000291
+  d4:	00000291 	.word	0x00000291
+  d8:	00000291 	.word	0x00000291
+  dc:	00000291 	.word	0x00000291
+  e0:	00000291 	.word	0x00000291
+  e4:	00000291 	.word	0x00000291
+  e8:	00000291 	.word	0x00000291
+  ec:	00000291 	.word	0x00000291
+  f0:	00000291 	.word	0x00000291
+  f4:	00000291 	.word	0x00000291
+	...
+ 100:	00000291 	.word	0x00000291
+ 104:	00000000 	.word	0x00000000
+ 108:	00000291 	.word	0x00000291
+ 10c:	00000291 	.word	0x00000291
+ 110:	00000291 	.word	0x00000291
+ 114:	00000291 	.word	0x00000291
+ 118:	00000291 	.word	0x00000291
+ 11c:	00000291 	.word	0x00000291
+ 120:	00000291 	.word	0x00000291
+ 124:	00000291 	.word	0x00000291
+ 128:	00000291 	.word	0x00000291
+ 12c:	00000291 	.word	0x00000291
+ 130:	00000291 	.word	0x00000291
+
+00000134 <myprintf>:
+extern	void SemiHost(char* a); // use this for semihost write
+
+// myprintf is a much simplied printf for embedded for use with semihosting
+// It is limited to printing a text message and then an integer over the semihost channel
+
+void myprintf(char* text, int value) {
+ 134:	b580      	push	{r7, lr}
+ 136:	b08a      	sub	sp, #40	; 0x28
+ 138:	af00      	add	r7, sp, #0
+ 13a:	6078      	str	r0, [r7, #4]
+ 13c:	6039      	str	r1, [r7, #0]
+
+    int negative = 0;
+ 13e:	2300      	movs	r3, #0
+ 140:	627b      	str	r3, [r7, #36]	; 0x24
+    char strnum [10];
+    char digits [] = {'0','1','2','3','4','5','6','7','8','9'};
+ 142:	4a34      	ldr	r2, [pc, #208]	; (214 <myprintf+0xe0>)
+ 144:	f107 0308 	add.w	r3, r7, #8
+ 148:	6810      	ldr	r0, [r2, #0]
+ 14a:	6851      	ldr	r1, [r2, #4]
+ 14c:	c303      	stmia	r3!, {r0, r1}
+ 14e:	8912      	ldrh	r2, [r2, #8]
+ 150:	801a      	strh	r2, [r3, #0]
+    char *ptr = &strnum[9];
+ 152:	f107 0314 	add.w	r3, r7, #20
+ 156:	3309      	adds	r3, #9
+ 158:	623b      	str	r3, [r7, #32]
+
+    *ptr = '\0';
+ 15a:	6a3b      	ldr	r3, [r7, #32]
+ 15c:	2200      	movs	r2, #0
+ 15e:	701a      	strb	r2, [r3, #0]
+
+    if (value <0) {
+ 160:	683b      	ldr	r3, [r7, #0]
+ 162:	2b00      	cmp	r3, #0
+ 164:	da04      	bge.n	170 <myprintf+0x3c>
+        value=-value;
+ 166:	683b      	ldr	r3, [r7, #0]
+ 168:	425b      	negs	r3, r3
+ 16a:	603b      	str	r3, [r7, #0]
+        negative = 1;
+ 16c:	2301      	movs	r3, #1
+ 16e:	627b      	str	r3, [r7, #36]	; 0x24
+    }
+
+    if (value == 0) {
+ 170:	683b      	ldr	r3, [r7, #0]
+ 172:	2b00      	cmp	r3, #0
+ 174:	d124      	bne.n	1c0 <myprintf+0x8c>
+        ptr--;
+ 176:	6a3b      	ldr	r3, [r7, #32]
+ 178:	3b01      	subs	r3, #1
+ 17a:	623b      	str	r3, [r7, #32]
+        *ptr='0';
+ 17c:	6a3b      	ldr	r3, [r7, #32]
+ 17e:	2230      	movs	r2, #48	; 0x30
+ 180:	701a      	strb	r2, [r3, #0]
+    }
+
+    while (value!=0)
+ 182:	e01d      	b.n	1c0 <myprintf+0x8c>
+    {
+        ptr--;
+ 184:	6a3b      	ldr	r3, [r7, #32]
+ 186:	3b01      	subs	r3, #1
+ 188:	623b      	str	r3, [r7, #32]
+        *ptr = digits[value % 10];
+ 18a:	6839      	ldr	r1, [r7, #0]
+ 18c:	4b22      	ldr	r3, [pc, #136]	; (218 <myprintf+0xe4>)
+ 18e:	fb83 2301 	smull	r2, r3, r3, r1
+ 192:	109a      	asrs	r2, r3, #2
+ 194:	17cb      	asrs	r3, r1, #31
+ 196:	1ad2      	subs	r2, r2, r3
+ 198:	4613      	mov	r3, r2
+ 19a:	009b      	lsls	r3, r3, #2
+ 19c:	4413      	add	r3, r2
+ 19e:	005b      	lsls	r3, r3, #1
+ 1a0:	1aca      	subs	r2, r1, r3
+ 1a2:	f107 0328 	add.w	r3, r7, #40	; 0x28
+ 1a6:	4413      	add	r3, r2
+ 1a8:	f813 2c20 	ldrb.w	r2, [r3, #-32]
+ 1ac:	6a3b      	ldr	r3, [r7, #32]
+ 1ae:	701a      	strb	r2, [r3, #0]
+        value=value/10;
+ 1b0:	683b      	ldr	r3, [r7, #0]
+ 1b2:	4a19      	ldr	r2, [pc, #100]	; (218 <myprintf+0xe4>)
+ 1b4:	fb82 1203 	smull	r1, r2, r2, r3
+ 1b8:	1092      	asrs	r2, r2, #2
+ 1ba:	17db      	asrs	r3, r3, #31
+ 1bc:	1ad3      	subs	r3, r2, r3
+ 1be:	603b      	str	r3, [r7, #0]
+    if (value == 0) {
+        ptr--;
+        *ptr='0';
+    }
+
+    while (value!=0)
+ 1c0:	683b      	ldr	r3, [r7, #0]
+ 1c2:	2b00      	cmp	r3, #0
+ 1c4:	d1de      	bne.n	184 <myprintf+0x50>
+        ptr--;
+        *ptr = digits[value % 10];
+        value=value/10;
+    }
+
+    if (negative) {
+ 1c6:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 1c8:	2b00      	cmp	r3, #0
+ 1ca:	d00c      	beq.n	1e6 <myprintf+0xb2>
+        ptr--;
+ 1cc:	6a3b      	ldr	r3, [r7, #32]
+ 1ce:	3b01      	subs	r3, #1
+ 1d0:	623b      	str	r3, [r7, #32]
+        *ptr = '-';
+ 1d2:	6a3b      	ldr	r3, [r7, #32]
+ 1d4:	222d      	movs	r2, #45	; 0x2d
+ 1d6:	701a      	strb	r2, [r3, #0]
+    }
+
+    // First print the text message
+    while (*text != '\0')
+ 1d8:	e005      	b.n	1e6 <myprintf+0xb2>
+    {
+    	SemiHost(text);
+ 1da:	6878      	ldr	r0, [r7, #4]
+ 1dc:	f000 f85a 	bl	294 <SemiHost>
+    	text++;
+ 1e0:	687b      	ldr	r3, [r7, #4]
+ 1e2:	3301      	adds	r3, #1
+ 1e4:	607b      	str	r3, [r7, #4]
+        ptr--;
+        *ptr = '-';
+    }
+
+    // First print the text message
+    while (*text != '\0')
+ 1e6:	687b      	ldr	r3, [r7, #4]
+ 1e8:	781b      	ldrb	r3, [r3, #0]
+ 1ea:	2b00      	cmp	r3, #0
+ 1ec:	d1f5      	bne.n	1da <myprintf+0xa6>
+    	SemiHost(text);
+    	text++;
+    }
+
+    // Now print the integer
+    while (*ptr != '\0')
+ 1ee:	e005      	b.n	1fc <myprintf+0xc8>
+    {
+    	SemiHost(ptr);
+ 1f0:	6a38      	ldr	r0, [r7, #32]
+ 1f2:	f000 f84f 	bl	294 <SemiHost>
+    	ptr++;
+ 1f6:	6a3b      	ldr	r3, [r7, #32]
+ 1f8:	3301      	adds	r3, #1
+ 1fa:	623b      	str	r3, [r7, #32]
+    	SemiHost(text);
+    	text++;
+    }
+
+    // Now print the integer
+    while (*ptr != '\0')
+ 1fc:	6a3b      	ldr	r3, [r7, #32]
+ 1fe:	781b      	ldrb	r3, [r3, #0]
+ 200:	2b00      	cmp	r3, #0
+ 202:	d1f5      	bne.n	1f0 <myprintf+0xbc>
+    {
+    	SemiHost(ptr);
+    	ptr++;
+    }
+
+    SemiHost("\n");
+ 204:	4805      	ldr	r0, [pc, #20]	; (21c <myprintf+0xe8>)
+ 206:	f000 f845 	bl	294 <SemiHost>
+
+}
+ 20a:	bf00      	nop
+ 20c:	3728      	adds	r7, #40	; 0x28
+ 20e:	46bd      	mov	sp, r7
+ 210:	bd80      	pop	{r7, pc}
+ 212:	bf00      	nop
+ 214:	000002a4 	.word	0x000002a4
+ 218:	66666667 	.word	0x66666667
+ 21c:	000002a0 	.word	0x000002a0
+
+00000220 <main>:
+#include "/Users/Liam/Documents/LiamsDox/Personal/GeekingOut/SoftDvt/Embedded/EclipseMarsFeb2016/WorkspaceJan16/Foundation/myprintf.h"
+
+int main()
+{
+ 220:	b580      	push	{r7, lr}
+ 222:	b082      	sub	sp, #8
+ 224:	af00      	add	r7, sp, #0
+	int variable = 1;
+ 226:	2301      	movs	r3, #1
+ 228:	607b      	str	r3, [r7, #4]
+
+	myprintf("Hello world ",314159);
+ 22a:	4906      	ldr	r1, [pc, #24]	; (244 <main+0x24>)
+ 22c:	4806      	ldr	r0, [pc, #24]	; (248 <main+0x28>)
+ 22e:	f7ff ff81 	bl	134 <myprintf>
+
+	while(1) {
+	myprintf("Other variable ",variable);
+ 232:	6879      	ldr	r1, [r7, #4]
+ 234:	4805      	ldr	r0, [pc, #20]	; (24c <main+0x2c>)
+ 236:	f7ff ff7d 	bl	134 <myprintf>
+	variable++;
+ 23a:	687b      	ldr	r3, [r7, #4]
+ 23c:	3301      	adds	r3, #1
+ 23e:	607b      	str	r3, [r7, #4]
+	}
+ 240:	e7f7      	b.n	232 <main+0x12>
+ 242:	bf00      	nop
+ 244:	0004cb2f 	.word	0x0004cb2f
+ 248:	000002b0 	.word	0x000002b0
+ 24c:	000002c0 	.word	0x000002c0
+
+00000250 <Reset_Handler>:
+ 250:	2100      	movs	r1, #0
+ 252:	e003      	b.n	25c <LoopCopyDataInit>
+
+00000254 <CopyDataInit>:
+ 254:	4b09      	ldr	r3, [pc, #36]	; (27c <LoopFillZerobss+0xc>)
+ 256:	585b      	ldr	r3, [r3, r1]
+ 258:	5043      	str	r3, [r0, r1]
+ 25a:	3104      	adds	r1, #4
+
+0000025c <LoopCopyDataInit>:
+ 25c:	4808      	ldr	r0, [pc, #32]	; (280 <LoopFillZerobss+0x10>)
+ 25e:	4b09      	ldr	r3, [pc, #36]	; (284 <LoopFillZerobss+0x14>)
+ 260:	1842      	adds	r2, r0, r1
+ 262:	429a      	cmp	r2, r3
+ 264:	d3f6      	bcc.n	254 <CopyDataInit>
+ 266:	4a08      	ldr	r2, [pc, #32]	; (288 <LoopFillZerobss+0x18>)
+ 268:	e002      	b.n	270 <LoopFillZerobss>
+
+0000026a <FillZerobss>:
+ 26a:	2300      	movs	r3, #0
+ 26c:	f842 3b04 	str.w	r3, [r2], #4
+
+00000270 <LoopFillZerobss>:
+ 270:	4b06      	ldr	r3, [pc, #24]	; (28c <LoopFillZerobss+0x1c>)
+ 272:	429a      	cmp	r2, r3
+ 274:	d3f9      	bcc.n	26a <FillZerobss>
+ 276:	f7ff ffd3 	bl	220 <main>
+ 27a:	4770      	bx	lr
+ 27c:	000002d0 	.word	0x000002d0
+ 280:	20000000 	.word	0x20000000
+ 284:	20000000 	.word	0x20000000
+ 288:	20000000 	.word	0x20000000
+ 28c:	20000000 	.word	0x20000000
+
+00000290 <ADC1_IRQHandler>:
+ 290:	e7fe      	b.n	290 <ADC1_IRQHandler>
+	...
+
+00000294 <SemiHost>:
+ 294:	4601      	mov	r1, r0
+ 296:	f04f 0003 	mov.w	r0, #3
+ 29a:	beab      	bkpt	0x00ab
+ 29c:	4770      	bx	lr
+ 29e:	bf00      	nop
+ 2a0:	0000000a 	.word	0x0000000a
+ 2a4:	33323130 	.word	0x33323130
+ 2a8:	37363534 	.word	0x37363534
+ 2ac:	00003938 	.word	0x00003938
+ 2b0:	6c6c6548 	.word	0x6c6c6548
+ 2b4:	6f77206f 	.word	0x6f77206f
+ 2b8:	20646c72 	.word	0x20646c72
+ 2bc:	00000000 	.word	0x00000000
+ 2c0:	6568744f 	.word	0x6568744f
+ 2c4:	61762072 	.word	0x61762072
+ 2c8:	62616972 	.word	0x62616972
+ 2cc:	0020656c 	.word	0x0020656c
