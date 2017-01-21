@@ -5,7 +5,7 @@ int main()
 {
 	int variable = 1;
 
-	myprintf("Hello world again ",314159);
+	myprintf("Semihost my driver ",314159);
 
 	while(1) {
 	myprintf("Other variable ",variable);
