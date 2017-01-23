@@ -1,5 +1,4 @@
-#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/myprintf.h"
-//#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/myprintf.h"
+#include "../Foundation/myprintf.h"
 
 int main()
 {
